@@ -7,13 +7,13 @@
                 "name": "BigFoot Burger",
                 "price": "6",
                 "currency": "$",
-                "image": "burgerPhoto"
+                "image": "bigFootBurger"
             },
             {
                 "name": "Cheese Burger",
                 "price": "7",
                 "currency": "$",
-                "image": "burgerPhoto"
+                "image": "cheeseBurger"
             },
             {
                 "name": "Meteor Burger",
@@ -25,31 +25,31 @@
                 "name": "Beefcake Burger",
                 "price": "9",
                 "currency": "$",
-                "image": "burgerPhoto"
+                "image": "beefcakeBurger"
             },
             {
                 "name": "BBQ Burger",
                 "price": "10",
                 "currency": "$",
-                "image": "burgerPhoto"
+                "image": "bbqBurger"
             },
             {
                 "name": "Chicken Burger",
                 "price": "11",
                 "currency": "$",
-                "image": "burgerPhoto"
+                "image": "chickenBurger"
             },
             {
                 "name": "Meat Burger",
                 "price": "13",
                 "currency": "$",
-                "image": "burgerPhoto"
+                "image": "meatBurger"
             },
             {
                 "name": "Vegan Burger",
                 "price": "4",
                 "currency": "$",
-                "image": "burgerPhoto"
+                "image": "veganBurger"
             }
         ]
     },
@@ -61,7 +61,7 @@
                 "name": "Pad Thai",
                 "price": "10",
                 "currency": "$",
-                "image": "asianPhoto"
+                "image": "padThai"
             },
             {
                 "name": "Satay",
