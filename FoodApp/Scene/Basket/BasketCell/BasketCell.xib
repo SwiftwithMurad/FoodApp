@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="194" id="KGk-i7-Jjw" customClass="BasketCell" customModule="FoodApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="530" height="194"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="530" height="194"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yJd-zK-3X9">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="194"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mco-Ym-i8Z">
+                        <rect key="frame" x="309" y="13.999999999999998" width="41.333333333333314" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKA-SU-iA8">
+                        <rect key="frame" x="308" y="58" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemOrangeColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVE-2X-0UE">
+                        <rect key="frame" x="388" y="58" width="45" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery to 540 Manchester Road London SE81 6UN" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXR-89-9Ng">
+                        <rect key="frame" x="309" y="103" width="221" height="40.666666666666657"/>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yJd-zK-3X9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1on-Cj-UYn"/>
+                    <constraint firstItem="yXR-89-9Ng" firstAttribute="top" secondItem="zKA-SU-iA8" secondAttribute="bottom" constant="24" id="2q5-0T-oOa"/>
+                    <constraint firstItem="wVE-2X-0UE" firstAttribute="top" secondItem="zKA-SU-iA8" secondAttribute="top" id="37C-Tv-PpQ"/>
+                    <constraint firstItem="zKA-SU-iA8" firstAttribute="top" secondItem="Mco-Ym-i8Z" secondAttribute="bottom" constant="23.666666666666671" id="5tA-1V-X4I"/>
+                    <constraint firstAttribute="trailing" secondItem="yXR-89-9Ng" secondAttribute="trailing" id="8eF-Ds-9ez"/>
+                    <constraint firstItem="yJd-zK-3X9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="IgE-Ts-ocu"/>
+                    <constraint firstItem="yJd-zK-3X9" firstAttribute="top" secondItem="Mco-Ym-i8Z" secondAttribute="bottom" constant="-34.333333333333336" id="PLx-px-RnP"/>
+                    <constraint firstItem="zKA-SU-iA8" firstAttribute="leading" secondItem="yJd-zK-3X9" secondAttribute="trailing" constant="68" id="TsY-tQ-cbi"/>
+                    <constraint firstItem="yJd-zK-3X9" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.45283" id="UWE-lM-cFZ"/>
+                    <constraint firstAttribute="bottom" secondItem="yJd-zK-3X9" secondAttribute="bottom" id="Ygo-t6-fiw"/>
+                    <constraint firstItem="Mco-Ym-i8Z" firstAttribute="leading" secondItem="yJd-zK-3X9" secondAttribute="trailing" constant="69" id="dgq-4B-pzx"/>
+                    <constraint firstItem="wVE-2X-0UE" firstAttribute="leading" secondItem="zKA-SU-iA8" secondAttribute="trailing" constant="38" id="gOA-BE-kJX"/>
+                    <constraint firstItem="yXR-89-9Ng" firstAttribute="leading" secondItem="yJd-zK-3X9" secondAttribute="trailing" constant="69" id="vy7-LJ-IGB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellImage" destination="yJd-zK-3X9" id="81R-aD-uxk"/>
+                <outlet property="foodNameLabel" destination="Mco-Ym-i8Z" id="6Uk-yE-4Ge"/>
+                <outlet property="priceLabel" destination="zKA-SU-iA8" id="SiD-Ux-duj"/>
+            </connections>
+            <point key="canvasLocation" x="-63" y="33"/>
+        </tableViewCell>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tAW-Rd-QNS" customClass="BasketViewCell" customModule="FoodApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="201"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="433" height="201"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CWf-XD-z47">
+                        <rect key="frame" x="0.0" y="0.0" width="174" height="201"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jst-wg-v0j">
+                        <rect key="frame" x="280" y="20" width="42" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="z08-wF-Bj3"/>
+            <constraints>
+                <constraint firstItem="CWf-XD-z47" firstAttribute="leading" secondItem="tAW-Rd-QNS" secondAttribute="leading" id="VSz-V4-z5u"/>
+                <constraint firstItem="CWf-XD-z47" firstAttribute="width" secondItem="tAW-Rd-QNS" secondAttribute="width" multiplier="0.401848" id="Z0E-dO-efb"/>
+                <constraint firstAttribute="bottom" secondItem="CWf-XD-z47" secondAttribute="bottom" id="cUb-Ly-uGp"/>
+                <constraint firstItem="CWf-XD-z47" firstAttribute="top" secondItem="tAW-Rd-QNS" secondAttribute="top" id="kfc-4Y-EaY"/>
+            </constraints>
+            <size key="customSize" width="433" height="201"/>
+            <point key="canvasLocation" x="-68" y="98"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

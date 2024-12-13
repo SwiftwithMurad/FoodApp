@@ -1,0 +1,356 @@
+[
+    {
+        "name": "Burger",
+        "image": "burgerPhoto",
+        "category": [
+            {
+                "name": "BigFoot Burger",
+                "price": "6",
+                "currency": "$",
+                "image": "burgerPhoto"
+            },
+            {
+                "name": "Cheese Burger",
+                "price": "7",
+                "currency": "$",
+                "image": "burgerPhoto"
+            },
+            {
+                "name": "Meteor Burger",
+                "price": "8",
+                "currency": "$",
+                "image": "burgerPhoto"
+            },
+            {
+                "name": "Beefcake Burger",
+                "price": "9",
+                "currency": "$",
+                "image": "burgerPhoto"
+            },
+            {
+                "name": "BBQ Burger",
+                "price": "10",
+                "currency": "$",
+                "image": "burgerPhoto"
+            },
+            {
+                "name": "Chicken Burger",
+                "price": "11",
+                "currency": "$",
+                "image": "burgerPhoto"
+            },
+            {
+                "name": "Meat Burger",
+                "price": "13",
+                "currency": "$",
+                "image": "burgerPhoto"
+            },
+            {
+                "name": "Vegan Burger",
+                "price": "4",
+                "currency": "$",
+                "image": "burgerPhoto"
+            }
+        ]
+    },
+    {
+        "name": "Asia",
+        "image": "asianPhoto",
+        "category": [
+            {
+                "name": "Pad Thai",
+                "price": "10",
+                "currency": "$",
+                "image": "asianPhoto"
+            },
+            {
+                "name": "Satay",
+                "price": "8",
+                "currency": "$",
+                "image": "asianPhoto"
+            },
+            {
+                "name": "Sushi",
+                "price": "10",
+                "currency": "$",
+                "image": "asianPhoto"
+            },
+            {
+                "name": "Dim Sum",
+                "price": "7",
+                "currency": "$",
+                "image": "asianPhoto"
+            },
+            {
+                "name": "Ramen",
+                "price": "6",
+                "currency": "$",
+                "image": "asianPhoto"
+            },
+            {
+                "name": "Laksa",
+                "price": "9",
+                "currency": "$",
+                "image": "asianPhoto"
+            },
+            {
+                "name": "Nasi Goreng",
+                "price": "8",
+                "currency": "$",
+                "image": "asianPhoto"
+            },
+            {
+                "name": "Tom Yum",
+                "price": "11",
+                "currency": "$",
+                "image": "asianPhoto"
+            }
+        ]
+    },
+    {
+        "name": "Italian",
+        "image": "italianPhoto",
+        "category": [
+            {
+                "name": "Risotto",
+                "price": "8",
+                "currency": "$",
+                "image": "italianPhoto"
+            },
+            {
+                "name": "Lasagna",
+                "price": "10",
+                "currency": "$",
+                "image": "italianPhoto"
+            },
+            {
+                "name": "Pizza",
+                "price": "15",
+                "currency": "$",
+                "image": "italianPhoto"
+            },
+            {
+                "name": "Carbonara",
+                "price": "6",
+                "currency": "$",
+                "image": "italianPhoto"
+            },
+            {
+                "name": "Polenta",
+                "price": "10",
+                "currency": "$",
+                "image": "italianPhoto"
+            },
+            {
+                "name": "Gnocchi",
+                "price": "16",
+                "currency": "$",
+                "image": "italianPhoto"
+            },
+            {
+                "name": "Cacio o pepe",
+                "price": "11",
+                "currency": "$",
+                "image": "italianPhoto"
+            },
+            {
+                "name": "Gelato",
+                "price": "6",
+                "currency": "$",
+                "image": "italianPhoto"
+            },
+            {
+                "name": "Pasta",
+                "price": "8",
+                "currency": "$",
+                "image": "italianPhoto"
+            },
+            {
+                "name": "Ravioli",
+                "price": "7",
+                "currency": "$",
+                "image": "italianPhoto"
+            }
+        ]
+    },
+    {
+        "name": "Desert",
+        "image": "desertPhoto",
+        "category": [
+            {
+                "name": "Tiramisu",
+                "price": "7",
+                "currency": "$",
+                "image": "desertPhoto"
+            },
+            {
+                "name": "Cakes",
+                "price": "15",
+                "currency": "$",
+                "image": "desertPhoto"
+            },
+            {
+                "name": "Cupcakes",
+                "price": "9",
+                "currency": "$",
+                "image": "desertPhoto"
+            },
+            {
+                "name": "Brownies",
+                "price": "7",
+                "currency": "$",
+                "image": "desertPhoto"
+            },
+            {
+                "name": "Muffins",
+                "price": "8",
+                "currency": "$",
+                "image": "desertPhoto"
+            },
+            {
+                "name": "Custards",
+                "price": "6",
+                "currency": "$",
+                "image": "desertPhoto"
+            },
+            {
+                "name": "CheeseCakes",
+                "price": "9",
+                "currency": "$",
+                "image": "desertPhoto"
+            },
+            {
+                "name": "Pudding",
+                "price": "11",
+                "currency": "$",
+                "image": "desertPhoto"
+            },
+            {
+                "name": "Pastry",
+                "price": "9",
+                "currency": "$",
+                "image": "desertPhoto"
+            }
+        ]
+    },
+    {
+        "name": "Salad",
+        "image": "saladPhoto",
+        "category": [
+            {
+                "name": "Caesar Salad",
+                "price": "10",
+                "currency": "$",
+                "image": "saladPhoto"
+            },
+            {
+                "name": "Vegeterian Salad",
+                "price": "4",
+                "currency": "$",
+                "image": "saladPhoto"
+            },
+            {
+                "name": "Spinach Salad",
+                "price": "6",
+                "currency": "$",
+                "image": "saladPhoto"
+            },
+            {
+                "name": "Broccoli Salad",
+                "price": "8",
+                "currency": "$",
+                "image": "saladPhoto"
+            },
+            {
+                "name": "Garden Salad",
+                "price": "9",
+                "currency": "$",
+                "image": "saladPhoto"
+            },
+            {
+                "name": "Black Bean Salad",
+                "price": "8",
+                "currency": "$",
+                "image": "saladPhoto"
+            },
+            {
+                "name": "Greek Salad",
+                "price": "10",
+                "currency": "$",
+                "image": "saladPhoto"
+            },
+            {
+                "name": "Egg Salad",
+                "price": "5",
+                "currency": "$",
+                "image": "saladPhoto"
+            },
+            {
+                "name": "Tuna Salad",
+                "price": "7",
+                "currency": "$",
+                "image": "saladPhoto"
+            }
+        ]
+    },
+    {
+        "name": "Doner",
+        "image": "donerPhoto",
+        "category": [
+            {
+                "name": "Shaurma",
+                "price": "3",
+                "currency": "$",
+                "image": "donerPhoto"
+            },
+            {
+                "name": "Tavuk Doner",
+                "price": "3",
+                "currency": "$",
+                "image": "donerPhoto"
+            },
+            {
+                "name": "Meat Doner",
+                "price": "2",
+                "currency": "$",
+                "image": "donerPhoto"
+            },
+            {
+                "name": "Tombik Meat Doner",
+                "price": "4",
+                "currency": "$",
+                "image": "donerPhoto"
+            },
+            {
+                "name": "Pilav Ustu Doner",
+                "price": "4",
+                "currency": "$",
+                "image": "donerPhoto"
+            },
+            {
+                "name": "Durum",
+                "price": "2",
+                "currency": "$",
+                "image": "donerPhoto"
+            },
+            {
+                "name": "Porsiyon Kofte",
+                "price": "3",
+                "currency": "$",
+                "image": "donerPhoto"
+            },
+            {
+                "name": "Tavuk Iskender",
+                "price": "5",
+                "currency": "$",
+                "image": "donerPhoto"
+            },
+            {
+                "name": "Et Iskender",
+                "price": "7",
+                "currency": "$",
+                "image": "donerPhoto"
+            }
+        ]
+    }
+]
