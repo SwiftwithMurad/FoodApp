@@ -25,34 +25,8 @@ class BasketController: UIViewController {
         basketTableView.delegate = self
         
         basketTableView.register(UINib(nibName: "BasketCell", bundle: nil), forCellReuseIdentifier: "BasketCell")
-        readData()
     }
     
-    func readData() {
-        do {
-            let data = try Data(contentsOf: getFilePath())
-            addedFoods = try JSONDecoder().decode([Foods].self, from: data)
-        } catch {
-            print(error.localizedDescription)
-        }
-    }
-    
-    func getFilePath() -> URL {
-        let files = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let path = files[0].appendingPathComponent("Foods.json")
-        print(path)
-        return path
-    }
-    
-    func writeData(foods: [Foods]) {
-        do {
-            let data = try JSONEncoder().encode(foods)
-            try data.write(to: getFilePath())
-        } catch {
-            print(error.localizedDescription)
-        }
-
-    }
 }
 
 extension BasketController: UITableViewDelegate, UITableViewDataSource {
@@ -62,7 +36,7 @@ extension BasketController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BasketCell") as! BasketCell
-        cell.configure(price: addedFoods[indexPath.row].price ?? "", foodName: addedFoods[indexPath.row].name ?? "", cellImage: addedFoods[indexPath.row].image ?? "")
+        cell.configure(price: addedFoods[indexPath.row].price ?? "", foodName: addedFoods[indexPath.row].name ?? "", cellImage: addedFoods[indexPath.row].image ?? "", count: addedFoods[indexPath.row].price ?? "")
         return cell
     }
 }

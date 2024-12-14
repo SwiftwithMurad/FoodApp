@@ -67,43 +67,43 @@
                 "name": "Satay",
                 "price": "8",
                 "currency": "$",
-                "image": "asianPhoto"
+                "image": "satay"
             },
             {
                 "name": "Sushi",
                 "price": "10",
                 "currency": "$",
-                "image": "asianPhoto"
+                "image": "sushi"
             },
             {
                 "name": "Dim Sum",
                 "price": "7",
                 "currency": "$",
-                "image": "asianPhoto"
+                "image": "dimsum"
             },
             {
                 "name": "Ramen",
                 "price": "6",
                 "currency": "$",
-                "image": "asianPhoto"
+                "image": "ramen"
             },
             {
                 "name": "Laksa",
                 "price": "9",
                 "currency": "$",
-                "image": "asianPhoto"
+                "image": "laksa"
             },
             {
                 "name": "Nasi Goreng",
                 "price": "8",
                 "currency": "$",
-                "image": "asianPhoto"
+                "image": "nasigoreng"
             },
             {
                 "name": "Tom Yum",
                 "price": "11",
                 "currency": "$",
-                "image": "asianPhoto"
+                "image": "tomyum"
             }
         ]
     },
@@ -115,61 +115,61 @@
                 "name": "Risotto",
                 "price": "8",
                 "currency": "$",
-                "image": "italianPhoto"
+                "image": "risotto"
             },
             {
                 "name": "Lasagna",
                 "price": "10",
                 "currency": "$",
-                "image": "italianPhoto"
+                "image": "lasagna"
             },
             {
                 "name": "Pizza",
                 "price": "15",
                 "currency": "$",
-                "image": "italianPhoto"
+                "image": "pizza"
             },
             {
                 "name": "Carbonara",
                 "price": "6",
                 "currency": "$",
-                "image": "italianPhoto"
+                "image": "carbonara"
             },
             {
                 "name": "Polenta",
                 "price": "10",
                 "currency": "$",
-                "image": "italianPhoto"
+                "image": "polenta"
             },
             {
                 "name": "Gnocchi",
                 "price": "16",
                 "currency": "$",
-                "image": "italianPhoto"
+                "image": "gnocchi"
             },
             {
                 "name": "Cacio o pepe",
                 "price": "11",
                 "currency": "$",
-                "image": "italianPhoto"
+                "image": "cacioopepe"
             },
             {
                 "name": "Gelato",
                 "price": "6",
                 "currency": "$",
-                "image": "italianPhoto"
+                "image": "gelato"
             },
             {
                 "name": "Pasta",
                 "price": "8",
                 "currency": "$",
-                "image": "italianPhoto"
+                "image": "pasta"
             },
             {
                 "name": "Ravioli",
                 "price": "7",
                 "currency": "$",
-                "image": "italianPhoto"
+                "image": "ravioli"
             }
         ]
     },

@@ -10,8 +10,9 @@ import UIKit
 class BasketCell: UITableViewCell {
 
     
-    @IBOutlet private weak var priceLabel: UILabel!
-    @IBOutlet private weak var foodNameLabel: UILabel!
+    @IBOutlet weak var foodCount: UILabel!
+    @IBOutlet weak var foodPrice: UILabel!
+    @IBOutlet weak var foodName: UILabel!
     @IBOutlet private weak var cellImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,9 +25,10 @@ class BasketCell: UITableViewCell {
     
     }
     
-    func configure(price: String, foodName: String, cellImage: String) {
-        self.priceLabel.text = price
-        self.foodNameLabel.text = foodName
+    func configure(price: String, foodName: String, cellImage: String, count: String) {
+        self.foodName.text = foodName
+        self.foodPrice.text = price
+        self.foodCount.text = count
         self.cellImage.image = UIImage(named: cellImage)
     }
 }

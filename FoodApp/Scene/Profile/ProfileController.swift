@@ -23,7 +23,7 @@ class ProfileController: UIViewController {
         
         configUI()
     }
-    
+
     func configUI() {
         title = "Profile"
         
@@ -31,14 +31,18 @@ class ProfileController: UIViewController {
         profileAnimation.loopMode = .loop
         readData()
         
+        let filteredUsers = users.filter({ $0.email == manager.getString(key: .email) })
+        
         if let name = usernameLabel,
            let email = emailLabel,
            let password = passwordLabel,
            let number = numberLabel {
-            name.text = "Username: \(users[0].username)"
-            email.text = "Email: \(users[0].email)"
-            password.text = "Password: \(users[0].password)"
-            number.text = "Phone Number: \(users[0].phoneNumber)"
+            if users.contains(where: { $0.email == manager.getString(key: .email) }) {
+                name.text = "Username: \(filteredUsers[0].username)"
+                email.text = "Email: \(filteredUsers[0].email)"
+                password.text = "Password: \(filteredUsers[0].password)"
+                number.text = "Number: \(filteredUsers[0].phoneNumber)"
+            }
         }
 }
     
