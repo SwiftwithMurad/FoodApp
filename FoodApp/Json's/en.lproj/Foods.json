@@ -181,55 +181,55 @@
                 "name": "Tiramisu",
                 "price": "7",
                 "currency": "$",
-                "image": "desertPhoto"
+                "image": "tiramisu"
             },
             {
                 "name": "Cakes",
                 "price": "15",
                 "currency": "$",
-                "image": "desertPhoto"
+                "image": "cakes"
             },
             {
                 "name": "Cupcakes",
                 "price": "9",
                 "currency": "$",
-                "image": "desertPhoto"
+                "image": "cupcakes"
             },
             {
                 "name": "Brownies",
                 "price": "7",
                 "currency": "$",
-                "image": "desertPhoto"
+                "image": "brownies"
             },
             {
                 "name": "Muffins",
                 "price": "8",
                 "currency": "$",
-                "image": "desertPhoto"
+                "image": "muffins"
             },
             {
                 "name": "Custards",
                 "price": "6",
                 "currency": "$",
-                "image": "desertPhoto"
+                "image": "custards"
             },
             {
                 "name": "CheeseCakes",
                 "price": "9",
                 "currency": "$",
-                "image": "desertPhoto"
+                "image": "cheesecakes"
             },
             {
                 "name": "Pudding",
                 "price": "11",
                 "currency": "$",
-                "image": "desertPhoto"
+                "image": "pudding"
             },
             {
                 "name": "Pastry",
                 "price": "9",
                 "currency": "$",
-                "image": "desertPhoto"
+                "image": "pastry"
             }
         ]
     },

@@ -25,6 +25,7 @@ class BasketController: UIViewController {
         basketTableView.delegate = self
         
         basketTableView.register(UINib(nibName: "BasketCell", bundle: nil), forCellReuseIdentifier: "BasketCell")
+        print(addedFoods)
     }
     
 }
@@ -40,5 +41,3 @@ extension BasketController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
 }
-
-//'invalid nib registered for identifier (BasketCell) - nib must contain exactly one top level object which must be a UITableViewCell instance'
