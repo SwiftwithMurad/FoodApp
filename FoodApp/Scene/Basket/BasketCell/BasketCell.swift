@@ -16,7 +16,7 @@ class BasketCell: UITableViewCell {
     @IBOutlet private weak var cellImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+       
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -25,7 +25,7 @@ class BasketCell: UITableViewCell {
     
     }
     
-    func configure(price: String, foodName: String, cellImage: String, count: String) {
+    func configure(price: String, foodName: String, cellImage: String, count: String = "count:") {
         self.foodName.text = foodName
         self.foodPrice.text = price
         self.foodCount.text = count

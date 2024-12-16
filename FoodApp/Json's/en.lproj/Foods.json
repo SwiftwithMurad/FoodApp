@@ -301,55 +301,55 @@
                 "name": "Shaurma",
                 "price": "3",
                 "currency": "$",
-                "image": "donerPhoto"
+                "image": "shaurma"
             },
             {
                 "name": "Tavuk Doner",
                 "price": "3",
                 "currency": "$",
-                "image": "donerPhoto"
+                "image": "tavukdoner"
             },
             {
                 "name": "Meat Doner",
                 "price": "2",
                 "currency": "$",
-                "image": "donerPhoto"
+                "image": "meatdoner"
             },
             {
                 "name": "Tombik Meat Doner",
                 "price": "4",
                 "currency": "$",
-                "image": "donerPhoto"
+                "image": "tombikmeatdoner"
             },
             {
                 "name": "Pilav Ustu Doner",
                 "price": "4",
                 "currency": "$",
-                "image": "donerPhoto"
+                "image": "pilavustudoner"
             },
             {
                 "name": "Durum",
                 "price": "2",
                 "currency": "$",
-                "image": "donerPhoto"
+                "image": "durum"
             },
             {
                 "name": "Porsiyon Kofte",
                 "price": "3",
                 "currency": "$",
-                "image": "donerPhoto"
+                "image": "porsiyonkofte"
             },
             {
                 "name": "Tavuk Iskender",
                 "price": "5",
                 "currency": "$",
-                "image": "donerPhoto"
+                "image": "tavukiskender"
             },
             {
                 "name": "Et Iskender",
                 "price": "7",
                 "currency": "$",
-                "image": "donerPhoto"
+                "image": "etiskender"
             }
         ]
     }

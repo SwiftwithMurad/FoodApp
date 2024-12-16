@@ -52,6 +52,7 @@ extension FoodsController: UICollectionViewDelegate, UICollectionViewDataSource,
         cell.config(cellLabel: foods[indexPath.row].name ?? "", cellImage: foods[indexPath.row].image ?? "")
         cell.actionHandler = {
             let controller = self.storyboard?.instantiateViewController(withIdentifier: "BasketController") as! BasketController
+            controller.addedFoods = self.addedFoods
             self.addItemsToBasket(index: indexPath.row)
             print(self.addedFoods)
 
