@@ -13,6 +13,7 @@ class FoodsController: UIViewController {
     var foods: [Foods] = []
     var addedFoods: [Foods] = []
     var food: FoodCategory?
+    let helper = FileManagerHelper()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,38 +30,14 @@ class FoodsController: UIViewController {
         foodsCollection.dataSource = self
         foodsCollection.delegate = self
         foodsCollection.register(UINib(nibName: "FoodViewCell", bundle: nil), forCellWithReuseIdentifier: "FoodViewCell")
-        readData()
-    }
-    
-    func getFilePath() -> URL {
-        let file = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let path = file[0].appendingPathComponent("Foods.json")
-        print(path)
-        return path
-    }
-    
-    func writeData(foods: Foods) {
-        do {
-            let data = try JSONEncoder().encode(foods)
-            try data.write(to: getFilePath())
-        } catch {
-            print(error.localizedDescription)
-        }
-    }
-    
-    func readData() {
-        do {
-            let data = try Data(contentsOf: getFilePath())
-            foods = try JSONDecoder().decode([Foods].self, from: data)
-        } catch {
-            print(error.localizedDescription)
+        helper.readData { foods in
+            addedFoods = foods
         }
     }
     
     func addItemsToBasket(index: Int) {
-        writeData(foods: foods[index])
-        readData()
-        self.addedFoods.append(foods[index])
+        addedFoods.append(foods[index])
+        helper.writeBasketData(basket: addedFoods)
     }
 }
 
@@ -75,10 +52,9 @@ extension FoodsController: UICollectionViewDelegate, UICollectionViewDataSource,
         cell.config(cellLabel: foods[indexPath.row].name ?? "", cellImage: foods[indexPath.row].image ?? "")
         cell.actionHandler = {
             let controller = self.storyboard?.instantiateViewController(withIdentifier: "BasketController") as! BasketController
-            self.writeData(foods: self.foods[indexPath.row])
             self.addItemsToBasket(index: indexPath.row)
             print(self.addedFoods)
-            print("foods")
+
         }
         return cell
     }
@@ -87,3 +63,4 @@ extension FoodsController: UICollectionViewDelegate, UICollectionViewDataSource,
         .init(width: 190, height: 190)
     }
 }
+

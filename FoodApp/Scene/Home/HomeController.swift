@@ -12,6 +12,7 @@ class HomeController: UIViewController {
     
     let homeView = HomeVievModel()
     let foods = FoodsController()
+    let manager = FileManagerHelper()
     override func viewDidLoad() {
         super.viewDidLoad()
      

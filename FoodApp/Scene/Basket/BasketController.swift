@@ -12,6 +12,7 @@ class BasketController: UIViewController {
     
     var addedFoods: [Foods] = []
     let foods = FoodsController()
+    let manager = FileManagerHelper()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,10 +25,12 @@ class BasketController: UIViewController {
         basketTableView.dataSource = self
         basketTableView.delegate = self
         
-        basketTableView.register(UINib(nibName: "BasketCell", bundle: nil), forCellReuseIdentifier: "BasketCell")
+        basketTableView.register(UINib(nibName: "\(BasketCell.self)", bundle: nil), forCellReuseIdentifier: "\(BasketCell.self)")
         print(addedFoods)
+        manager.readData { basket in
+            addedFoods = basket
+        }
     }
-    
 }
 
 extension BasketController: UITableViewDelegate, UITableViewDataSource {
@@ -36,7 +39,7 @@ extension BasketController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "BasketCell") as! BasketCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "\(BasketCell.self)") as! BasketCell
         cell.configure(price: addedFoods[indexPath.row].price ?? "", foodName: addedFoods[indexPath.row].name ?? "", cellImage: addedFoods[indexPath.row].image ?? "", count: addedFoods[indexPath.row].price ?? "")
         return cell
     }

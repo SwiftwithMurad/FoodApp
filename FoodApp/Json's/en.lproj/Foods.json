@@ -241,55 +241,55 @@
                 "name": "Caesar Salad",
                 "price": "10",
                 "currency": "$",
-                "image": "saladPhoto"
+                "image": "caesar"
             },
             {
                 "name": "Vegeterian Salad",
                 "price": "4",
                 "currency": "$",
-                "image": "saladPhoto"
+                "image": "vegeterian"
             },
             {
                 "name": "Spinach Salad",
                 "price": "6",
                 "currency": "$",
-                "image": "saladPhoto"
+                "image": "spinach"
             },
             {
                 "name": "Broccoli Salad",
                 "price": "8",
                 "currency": "$",
-                "image": "saladPhoto"
+                "image": "broccoli"
             },
             {
                 "name": "Garden Salad",
                 "price": "9",
                 "currency": "$",
-                "image": "saladPhoto"
+                "image": "garden"
             },
             {
                 "name": "Black Bean Salad",
                 "price": "8",
                 "currency": "$",
-                "image": "saladPhoto"
+                "image": "blackbean"
             },
             {
                 "name": "Greek Salad",
                 "price": "10",
                 "currency": "$",
-                "image": "saladPhoto"
+                "image": "greek"
             },
             {
                 "name": "Egg Salad",
                 "price": "5",
                 "currency": "$",
-                "image": "saladPhoto"
+                "image": "egg"
             },
             {
                 "name": "Tuna Salad",
                 "price": "7",
                 "currency": "$",
-                "image": "saladPhoto"
+                "image": "tuna"
             }
         ]
     },
