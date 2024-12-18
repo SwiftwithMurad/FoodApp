@@ -16,16 +16,17 @@ class BasketCell: UITableViewCell {
     @IBOutlet private weak var cellImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-       
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
+        
     
     }
     
-    func configure(price: String, foodName: String, cellImage: String, count: String = "count:") {
+    func configure(price: String, foodName: String, cellImage: String, count: String) {
         self.foodName.text = foodName
         self.foodPrice.text = price
         self.foodCount.text = count

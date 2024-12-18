@@ -40,7 +40,25 @@ extension BasketController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "\(BasketCell.self)") as! BasketCell
-        cell.configure(price: addedFoods[indexPath.row].price ?? "", foodName: addedFoods[indexPath.row].name ?? "", cellImage: addedFoods[indexPath.row].image ?? "", count: addedFoods[indexPath.row].price ?? "")
+        cell.configure(price: "\(addedFoods[indexPath.row].price ?? "")\(addedFoods[indexPath.row].currency ?? "")", foodName: addedFoods[indexPath.row].name ?? "", cellImage: addedFoods[indexPath.row].image ?? "", count: "Count: \(addedFoods[indexPath.row].count ?? 0)")
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            tableView.beginUpdates()
+            addedFoods.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            manager.writeBasketData(basket: addedFoods)
+            tableView.endUpdates()
+        }
     }
 }

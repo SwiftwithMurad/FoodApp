@@ -7,49 +7,57 @@
                 "name": "BigFoot Burger",
                 "price": "6",
                 "currency": "$",
-                "image": "bigFootBurger"
+                "image": "bigFootBurger",
+                "count": 1
             },
             {
                 "name": "Cheese Burger",
                 "price": "7",
                 "currency": "$",
-                "image": "cheeseBurger"
+                "image": "cheeseBurger",
+                "count": 1
             },
             {
                 "name": "Meteor Burger",
                 "price": "8",
                 "currency": "$",
-                "image": "burgerPhoto"
+                "image": "burgerPhoto",
+                "count": 1
             },
             {
                 "name": "Beefcake Burger",
                 "price": "9",
                 "currency": "$",
-                "image": "beefcakeBurger"
+                "image": "beefcakeBurger",
+                "count": 1
             },
             {
                 "name": "BBQ Burger",
                 "price": "10",
                 "currency": "$",
-                "image": "bbqBurger"
+                "image": "bbqBurger",
+                "count": 1
             },
             {
                 "name": "Chicken Burger",
                 "price": "11",
                 "currency": "$",
-                "image": "chickenBurger"
+                "image": "chickenBurger",
+                "count": 1
             },
             {
                 "name": "Meat Burger",
                 "price": "13",
                 "currency": "$",
-                "image": "meatBurger"
+                "image": "meatBurger",
+                "count": 1
             },
             {
                 "name": "Vegan Burger",
                 "price": "4",
                 "currency": "$",
-                "image": "veganBurger"
+                "image": "veganBurger",
+                "count": 1
             }
         ]
     },
@@ -61,49 +69,57 @@
                 "name": "Pad Thai",
                 "price": "10",
                 "currency": "$",
-                "image": "padThai"
+                "image": "padThai",
+                "count": 1
             },
             {
                 "name": "Satay",
                 "price": "8",
                 "currency": "$",
-                "image": "satay"
+                "image": "satay",
+                "count": 1
             },
             {
                 "name": "Sushi",
                 "price": "10",
                 "currency": "$",
-                "image": "sushi"
+                "image": "sushi",
+                "count": 1
             },
             {
                 "name": "Dim Sum",
                 "price": "7",
                 "currency": "$",
-                "image": "dimsum"
+                "image": "dimsum",
+                "count": 1
             },
             {
                 "name": "Ramen",
                 "price": "6",
                 "currency": "$",
-                "image": "ramen"
+                "image": "ramen",
+                "count": 1
             },
             {
                 "name": "Laksa",
                 "price": "9",
                 "currency": "$",
-                "image": "laksa"
+                "image": "laksa",
+                "count": 1
             },
             {
                 "name": "Nasi Goreng",
                 "price": "8",
                 "currency": "$",
-                "image": "nasigoreng"
+                "image": "nasigoreng",
+                "count": 1
             },
             {
                 "name": "Tom Yum",
                 "price": "11",
                 "currency": "$",
-                "image": "tomyum"
+                "image": "tomyum",
+                "count": 1
             }
         ]
     },
@@ -115,61 +131,71 @@
                 "name": "Risotto",
                 "price": "8",
                 "currency": "$",
-                "image": "risotto"
+                "image": "risotto",
+                "count": 1
             },
             {
                 "name": "Lasagna",
                 "price": "10",
                 "currency": "$",
-                "image": "lasagna"
+                "image": "lasagna",
+                "count": 1
             },
             {
                 "name": "Pizza",
                 "price": "15",
                 "currency": "$",
-                "image": "pizza"
+                "image": "pizza",
+                "count": 1
             },
             {
                 "name": "Carbonara",
                 "price": "6",
                 "currency": "$",
-                "image": "carbonara"
+                "image": "carbonara",
+                "count": 1
             },
             {
                 "name": "Polenta",
                 "price": "10",
                 "currency": "$",
-                "image": "polenta"
+                "image": "polenta",
+                "count": 1
             },
             {
                 "name": "Gnocchi",
                 "price": "16",
                 "currency": "$",
-                "image": "gnocchi"
+                "image": "gnocchi",
+                "count": 1
             },
             {
                 "name": "Cacio o pepe",
                 "price": "11",
                 "currency": "$",
-                "image": "cacioopepe"
+                "image": "cacioopepe",
+                "count": 1
             },
             {
                 "name": "Gelato",
                 "price": "6",
                 "currency": "$",
-                "image": "gelato"
+                "image": "gelato",
+                "count": 1
             },
             {
                 "name": "Pasta",
                 "price": "8",
                 "currency": "$",
-                "image": "pasta"
+                "image": "pasta",
+                "count": 1
             },
             {
                 "name": "Ravioli",
                 "price": "7",
                 "currency": "$",
-                "image": "ravioli"
+                "image": "ravioli",
+                "count": 1
             }
         ]
     },
@@ -181,55 +207,64 @@
                 "name": "Tiramisu",
                 "price": "7",
                 "currency": "$",
-                "image": "tiramisu"
+                "image": "tiramisu",
+                "count": 1
             },
             {
                 "name": "Cakes",
                 "price": "15",
                 "currency": "$",
-                "image": "cakes"
+                "image": "cakes",
+                "count": 1
             },
             {
                 "name": "Cupcakes",
                 "price": "9",
                 "currency": "$",
-                "image": "cupcakes"
+                "image": "cupcakes",
+                "count": 1
             },
             {
                 "name": "Brownies",
                 "price": "7",
                 "currency": "$",
-                "image": "brownies"
+                "image": "brownies",
+                "count": 1
             },
             {
                 "name": "Muffins",
                 "price": "8",
                 "currency": "$",
-                "image": "muffins"
+                "image": "muffins",
+                "count": 1
             },
             {
                 "name": "Custards",
                 "price": "6",
                 "currency": "$",
-                "image": "custards"
+                "image": "custards",
+                "count": 1
             },
             {
                 "name": "CheeseCakes",
                 "price": "9",
                 "currency": "$",
-                "image": "cheesecakes"
+                "image": "cheesecakes",
+                "count": 1
             },
             {
                 "name": "Pudding",
                 "price": "11",
                 "currency": "$",
-                "image": "pudding"
+                "image": "pudding",
+                "count": 1
             },
             {
                 "name": "Pastry",
                 "price": "9",
                 "currency": "$",
-                "image": "pastry"
+                "image": "pastry",
+                "count": 1
             }
         ]
     },
@@ -241,55 +276,64 @@
                 "name": "Caesar Salad",
                 "price": "10",
                 "currency": "$",
-                "image": "caesar"
+                "image": "caesar",
+                "count": 1
             },
             {
                 "name": "Vegeterian Salad",
                 "price": "4",
                 "currency": "$",
-                "image": "vegeterian"
+                "image": "vegeterian",
+                "count": 1
             },
             {
                 "name": "Spinach Salad",
                 "price": "6",
                 "currency": "$",
-                "image": "spinach"
+                "image": "spinach",
+                "count": 1
             },
             {
                 "name": "Broccoli Salad",
                 "price": "8",
                 "currency": "$",
-                "image": "broccoli"
+                "image": "broccoli",
+                "count": 1
             },
             {
                 "name": "Garden Salad",
                 "price": "9",
                 "currency": "$",
-                "image": "garden"
+                "image": "garden",
+                "count": 1
             },
             {
                 "name": "Black Bean Salad",
                 "price": "8",
                 "currency": "$",
-                "image": "blackbean"
+                "image": "blackbean",
+                "count": 1
             },
             {
                 "name": "Greek Salad",
                 "price": "10",
                 "currency": "$",
-                "image": "greek"
+                "image": "greek",
+                "count": 1
             },
             {
                 "name": "Egg Salad",
                 "price": "5",
                 "currency": "$",
-                "image": "egg"
+                "image": "egg",
+                "count": 1
             },
             {
                 "name": "Tuna Salad",
                 "price": "7",
                 "currency": "$",
-                "image": "tuna"
+                "image": "tuna",
+                "count": 1
             }
         ]
     },
@@ -301,55 +345,64 @@
                 "name": "Shaurma",
                 "price": "3",
                 "currency": "$",
-                "image": "shaurma"
+                "image": "shaurma",
+                "count": 1
             },
             {
                 "name": "Tavuk Doner",
                 "price": "3",
                 "currency": "$",
-                "image": "tavukdoner"
+                "image": "tavukdoner",
+                "count": 1
             },
             {
                 "name": "Meat Doner",
                 "price": "2",
                 "currency": "$",
-                "image": "meatdoner"
+                "image": "meatdoner",
+                "count": 1
             },
             {
                 "name": "Tombik Meat Doner",
                 "price": "4",
                 "currency": "$",
-                "image": "tombikmeatdoner"
+                "image": "tombikmeatdoner",
+                "count": 1
             },
             {
                 "name": "Pilav Ustu Doner",
                 "price": "4",
                 "currency": "$",
-                "image": "pilavustudoner"
+                "image": "pilavustudoner",
+                "count": 1
             },
             {
                 "name": "Durum",
                 "price": "2",
                 "currency": "$",
-                "image": "durum"
+                "image": "durum",
+                "count": 1
             },
             {
                 "name": "Porsiyon Kofte",
                 "price": "3",
                 "currency": "$",
-                "image": "porsiyonkofte"
+                "image": "porsiyonkofte",
+                "count": 1
             },
             {
                 "name": "Tavuk Iskender",
                 "price": "5",
                 "currency": "$",
-                "image": "tavukiskender"
+                "image": "tavukiskender",
+                "count": 1
             },
             {
                 "name": "Et Iskender",
                 "price": "7",
                 "currency": "$",
-                "image": "etiskender"
+                "image": "etiskender",
+                "count": 1
             }
         ]
     }

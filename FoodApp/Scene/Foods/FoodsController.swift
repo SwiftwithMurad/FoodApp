@@ -36,10 +36,30 @@ class FoodsController: UIViewController {
     }
     
     func addItemsToBasket(index: Int) {
-        addedFoods.append(foods[index])
+        if let existingIndex = addedFoods.firstIndex(where: { $0.name == foods[index].name }) {
+            addedFoods[existingIndex].count = (addedFoods[existingIndex].count ?? 1) + 1
+        } else {
+            addedFoods.append(foods[index])
+        }
         helper.writeBasketData(basket: addedFoods)
     }
+    
+//
+//    func updatePrice() {
+//        if addedFoods.isEmpty {
+//                totalPriceLabel.text = "You have no food in basket"
+//            } else {
+//                totalPriceLabel.text = "Total Price: \(totalPrice)$"
+//            }
+//        }
+//        
+//        func calculateTotalPrice() {
+//            totalPrice = addedFoods.reduce(0) { $0 + ($1.price ?? "") * ($1.count ?? 1) }
+//                updatePrice()
+//        }
 }
+        
+
 
 //MARK: Collection delegate
 extension FoodsController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -55,7 +75,6 @@ extension FoodsController: UICollectionViewDelegate, UICollectionViewDataSource,
             controller.addedFoods = self.addedFoods
             self.addItemsToBasket(index: indexPath.row)
             print(self.addedFoods)
-
         }
         return cell
     }
