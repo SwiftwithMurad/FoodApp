@@ -17,6 +17,7 @@ class BasketController: UIViewController {
         super.viewDidLoad()
         
         configUI()
+        addFooter()
     }
     
     func configUI() {
@@ -30,6 +31,15 @@ class BasketController: UIViewController {
         manager.readData { basket in
             addedFoods = basket
         }
+    }
+    
+    func addFooter() {
+        let footer = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 30))
+        let label = UILabel(frame: footer.bounds)
+        label.text = "Total Price:"
+        label.textAlignment = .center
+        footer.addSubview(label)
+        basketTableView.tableFooterView = footer
     }
 }
 
