@@ -50,7 +50,12 @@ extension BasketController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "\(BasketCell.self)") as! BasketCell
-        cell.configure(price: "\(addedFoods[indexPath.row].price ?? "")\(addedFoods[indexPath.row].currency ?? "")", foodName: addedFoods[indexPath.row].name ?? "", cellImage: addedFoods[indexPath.row].image ?? "", count: "Count: \(addedFoods[indexPath.row].count ?? 0)")
+        let data = addedFoods[indexPath.row]
+        let price = (Double(data.price ?? "") ?? 0.0) * Double(data.count ?? 0)
+        cell.configure(price: "\(addedFoods[indexPath.row].currency ?? "")\(price)",
+                       foodName: addedFoods[indexPath.row].name ?? "",
+                       cellImage: addedFoods[indexPath.row].image ?? "",
+                       count: "Count: \(addedFoods[indexPath.row].count ?? 0)")
         return cell
     }
     

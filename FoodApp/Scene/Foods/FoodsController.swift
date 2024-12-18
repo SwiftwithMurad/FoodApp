@@ -69,7 +69,8 @@ extension FoodsController: UICollectionViewDelegate, UICollectionViewDataSource,
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodViewCell", for: indexPath) as! FoodViewCell
-        cell.config(cellLabel: foods[indexPath.row].name ?? "", cellImage: foods[indexPath.row].image ?? "")
+        cell.config(cellLabel: foods[indexPath.row].name ?? "",
+                    cellImage: foods[indexPath.row].image ?? "")
         cell.actionHandler = {
             let controller = self.storyboard?.instantiateViewController(withIdentifier: "BasketController") as! BasketController
             controller.addedFoods = self.addedFoods
