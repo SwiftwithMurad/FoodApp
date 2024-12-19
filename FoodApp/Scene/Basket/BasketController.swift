@@ -10,6 +10,7 @@ import UIKit
 class BasketController: UIViewController {
     @IBOutlet private weak var basketTableView: UITableView!
     
+    var totalPrice = 0.0
     var addedFoods: [Foods] = []
     let foods = FoodsController()
     let manager = FileManagerHelper()
@@ -17,7 +18,6 @@ class BasketController: UIViewController {
         super.viewDidLoad()
         
         configUI()
-        addFooter()
     }
     
     func configUI() {
@@ -31,15 +31,24 @@ class BasketController: UIViewController {
         manager.readData { basket in
             addedFoods = basket
         }
+        updateFooter()
     }
     
-    func addFooter() {
+    func addFooter() -> UILabel {
         let footer = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 30))
         let label = UILabel(frame: footer.bounds)
-        label.text = "Total Price:"
         label.textAlignment = .center
         footer.addSubview(label)
         basketTableView.tableFooterView = footer
+        return label
+    }
+    
+    func updateFooter() {
+        if addedFoods.isEmpty {
+            addFooter().text = "Your basket is empty"
+        } else {
+            addFooter().text = "Total price: \(totalPrice)$"
+        }
     }
 }
 
@@ -52,10 +61,12 @@ extension BasketController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "\(BasketCell.self)") as! BasketCell
         let data = addedFoods[indexPath.row]
         let price = (Double(data.price ?? "") ?? 0.0) * Double(data.count ?? 0)
+        totalPrice += price
         cell.configure(price: "\(addedFoods[indexPath.row].currency ?? "")\(price)",
                        foodName: addedFoods[indexPath.row].name ?? "",
                        cellImage: addedFoods[indexPath.row].image ?? "",
                        count: "Count: \(addedFoods[indexPath.row].count ?? 0)")
+        addFooter().text = "Total Price: \(totalPrice)\(addedFoods[indexPath.row].currency ?? "")"
         return cell
     }
     
@@ -69,6 +80,13 @@ extension BasketController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            let deletedItemPrice = Double(addedFoods[indexPath.row].price ?? "") ?? 0.0
+            configDelete()
+            totalPrice -= deletedItemPrice
+            updateFooter()
+        }
+        
+    func configDelete() {
             tableView.beginUpdates()
             addedFoods.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
@@ -76,4 +94,6 @@ extension BasketController: UITableViewDelegate, UITableViewDataSource {
             tableView.endUpdates()
         }
     }
+
+
 }

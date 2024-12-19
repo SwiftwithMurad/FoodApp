@@ -8,9 +8,9 @@
 import UIKit
 
 class BasketCell: UITableViewCell {
-    @IBOutlet weak var foodCount: UILabel!
-    @IBOutlet weak var foodPrice: UILabel!
-    @IBOutlet weak var foodName: UILabel!
+    @IBOutlet private weak var foodCount: UILabel!
+    @IBOutlet private weak var foodPrice: UILabel!
+    @IBOutlet private weak var foodName: UILabel!
     @IBOutlet private weak var cellImage: UIImageView!
     
     override func awakeFromNib() {
