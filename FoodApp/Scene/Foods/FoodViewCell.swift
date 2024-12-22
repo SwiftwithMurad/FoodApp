@@ -24,11 +24,8 @@ class FoodViewCell: UICollectionViewCell {
         actionHandler?()
     }
     
-    func hideButton() {
-        addButton.isHidden = true
-    }
-    
-    func config(cellLabel: String, cellImage: String) {
+    func config(cellLabel: String, cellImage: String, button: Bool) {
+        addButton.isHidden = button
         self.cellImageView.image = UIImage(named: cellImage)
         self.cellLabel.text = cellLabel
     }

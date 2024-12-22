@@ -10,7 +10,7 @@ import Foundation
 class HomeVievModel {
     var foodModel: [FoodCategory] = []
     
-    func getUrl() {
+    func getFoodItems() {
         if let fileUrl = Bundle.main.url(forResource: "Foods", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: fileUrl)

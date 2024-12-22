@@ -43,20 +43,6 @@ class FoodsController: UIViewController {
         }
         helper.writeBasketData(basket: addedFoods)
     }
-    
-//
-//    func updatePrice() {
-//        if addedFoods.isEmpty {
-//                totalPriceLabel.text = "You have no food in basket"
-//            } else {
-//                totalPriceLabel.text = "Total Price: \(totalPrice)$"
-//            }
-//        }
-//        
-//        func calculateTotalPrice() {
-//            totalPrice = addedFoods.reduce(0) { $0 + ($1.price ?? "") * ($1.count ?? 1) }
-//                updatePrice()
-//        }
 }
         
 
@@ -70,7 +56,8 @@ extension FoodsController: UICollectionViewDelegate, UICollectionViewDataSource,
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodViewCell", for: indexPath) as! FoodViewCell
         cell.config(cellLabel: foods[indexPath.row].name ?? "",
-                    cellImage: foods[indexPath.row].image ?? "")
+                    cellImage: foods[indexPath.row].image ?? "",
+                    button: false)
         cell.actionHandler = {
             let controller = self.storyboard?.instantiateViewController(withIdentifier: "BasketController") as! BasketController
             controller.addedFoods = self.addedFoods

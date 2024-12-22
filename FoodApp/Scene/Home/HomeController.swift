@@ -10,14 +10,14 @@ import UIKit
 class HomeController: UIViewController {
     @IBOutlet private weak var homeCollection: UICollectionView!
     
-    let homeView = HomeVievModel()
+    let homeViewModel = HomeVievModel()
     let foods = FoodsController()
     let manager = FileManagerHelper()
     override func viewDidLoad() {
         super.viewDidLoad()
      
         configureUI()
-        homeView.getUrl()
+        homeViewModel.getFoodItems()
     }
     
     func configureUI() {
@@ -37,13 +37,13 @@ class HomeController: UIViewController {
 
 extension HomeController:  UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return homeView.foodModel.count
+        return homeViewModel.foodModel.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodViewCell", for: indexPath) as! FoodViewCell
-        cell.config(cellLabel: homeView.foodModel[indexPath.row].name ?? "", cellImage: homeView.foodModel[indexPath.row].image ?? "")
-        cell.hideButton()
+        cell.config(cellLabel: homeViewModel.foodModel[indexPath.row].name ?? "", cellImage: homeViewModel.foodModel[indexPath.row].image ?? "",
+                    button: true)
         return cell
     }
     
@@ -53,8 +53,8 @@ extension HomeController:  UICollectionViewDelegate, UICollectionViewDataSource,
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let controller = storyboard?.instantiateViewController(withIdentifier: "FoodsController") as! FoodsController
-        controller.setFoods(foods: homeView.foodModel[indexPath.row].category ?? [])
-        controller.food = homeView.foodModel[indexPath.row]
+        
+        controller.food = homeViewModel.foodModel[indexPath.row]
         navigationController?.show(controller, sender: nil)
     }
     

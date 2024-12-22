@@ -80,20 +80,16 @@ extension BasketController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let deletedItemPrice = Double(addedFoods[indexPath.row].price ?? "") ?? 0.0
-            configDelete()
-            totalPrice -= deletedItemPrice
-            updateFooter()
-        }
-        
-    func configDelete() {
+            let price = Double(addedFoods[indexPath.row].price ?? "") ?? 0.0
+            let count = Double(addedFoods[indexPath.row].count ?? 0)
+            let deletedItemPrice = price * count
             tableView.beginUpdates()
             addedFoods.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
             manager.writeBasketData(basket: addedFoods)
             tableView.endUpdates()
+            totalPrice -= deletedItemPrice
+            updateFooter()
         }
     }
-
-
 }
