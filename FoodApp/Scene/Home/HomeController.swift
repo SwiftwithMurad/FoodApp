@@ -53,7 +53,6 @@ extension HomeController:  UICollectionViewDelegate, UICollectionViewDataSource,
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let controller = storyboard?.instantiateViewController(withIdentifier: "FoodsController") as! FoodsController
-        
         controller.food = homeViewModel.foodModel[indexPath.row]
         navigationController?.show(controller, sender: nil)
     }

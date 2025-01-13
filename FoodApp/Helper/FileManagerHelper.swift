@@ -8,7 +8,6 @@
 import Foundation
 
 class FileManagerHelper {
-    
     func getFilePath() -> URL {
         let file = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let path = file[0].appendingPathComponent("Foods.json")

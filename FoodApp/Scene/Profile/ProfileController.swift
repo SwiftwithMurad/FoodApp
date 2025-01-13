@@ -10,11 +10,11 @@ import Lottie
 
 class ProfileController: UIViewController {
 
-    @IBOutlet weak var usernameLabel: UILabel!
-    @IBOutlet weak var numberLabel: UILabel!
-    @IBOutlet weak var passwordLabel: UILabel!
-    @IBOutlet weak var emailLabel: UILabel!
-    @IBOutlet weak var profileAnimation: LottieAnimationView!
+    @IBOutlet private weak var usernameLabel: UILabel!
+    @IBOutlet private weak var numberLabel: UILabel!
+    @IBOutlet private weak var passwordLabel: UILabel!
+    @IBOutlet private weak var emailLabel: UILabel!
+    @IBOutlet private weak var profileAnimation: LottieAnimationView!
     
     let manager = UserDefaultsManager()
     var users: [User] = []
@@ -45,7 +45,7 @@ class ProfileController: UIViewController {
             }
         }
 }
-    
+
     func readData() {
         do {
             let data = try Data(contentsOf: getFilePath())
